@@ -23,6 +23,7 @@ For this lab, we will be experimenting with a variety of sensors, sending the da
 
 **How might you use this with only the parts in your kit? Show us your solution.**
 
+[Video Here] (https://github.com/sas695/IDD-Fa19-Lab3/blob/master/RGB%20LED.mov)
 
 ## Part C. Voltage Varying Sensors 
  
