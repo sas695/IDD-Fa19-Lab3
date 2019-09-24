@@ -43,13 +43,25 @@ By diconnecting individual resistors I can change the color of the LED that is f
 
 **d. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?**
 
-
+10k ohm 
 
 **e. What kind of relationship does the resistance have as a function of stimulus? (e.g., linear?)**
+
+Similar to the FSR, the relationship for the bend sensor is nonlinear, in that the voltage jumps very high with a small bend and is hard to get any more voltage by more severe bending. The voltage increases with bend in one direction (up to about 300) and voltage decreases (down to about 45) with bend in the opposite direction. Without any bend, the voltage value on the serial plotter is around 206.
+
+[Video Here] (https://github.com/sas695/IDD-Fa19-Lab3/blob/master/bend%20sensor.mov)
+
+For the photocell, the more light the photocell recieves, the more voltage. 
+
+And for the the slide sensor, sliding in one direction increases the voltage linearly and sliding the other direction decreases the voltage linearly. 
+
+[Video Here] (https://github.com/sas695/IDD-Fa19-Lab3/blob/master/slide%20sensor.mov)
 
 ### 2. Accelerometer
  
 **a. Include your accelerometer read-out code in your write-up.**
+
+[Code Here] (https://github.com/sas695/IDD-Fa19-Lab3/blob/master/Accelerometer_Readout_.ino)
 
 ### 3. IR Proximity Sensor
 
