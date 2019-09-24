@@ -1,6 +1,6 @@
 # Data Logger (and using cool sensors!)
 
-*A lab report by John Q. Student.*
+*A lab report by Samson Schirmer.*
 
 ## In The Report
 
@@ -31,6 +31,7 @@ For this lab, we will be experimenting with a variety of sensors, sending the da
 **a. What voltage values do you see from your force sensor?**
 
 0 - 1000
+
 **b. What kind of relationship does the voltage have as a function of the force applied? (e.g., linear?)**
 
 The relationship is exponential growth, in that the voltage jumps very high with a small force and is hard to get any more voltage by pressing very hard. 
