@@ -63,15 +63,6 @@ And for the the slide sensor, sliding in one direction increases the voltage lin
 
 [Code Here] (https://github.com/sas695/IDD-Fa19-Lab3/blob/master/Accelerometer_Readout_.ino)
 
-### 3. IR Proximity Sensor
-
-**a. Describe the voltage change over the sensing range of the sensor. A sketch of voltage vs. distance would work also. Does it match up with what you expect from the datasheet?**
-
-**b. Upload your merged code to your lab report repository and link to it here.**
-
-## Optional. Graphic Display
-
-**Take a picture of your screen working insert it here!**
 
 ## Part D. Logging values to the EEPROM and reading them back
  
@@ -79,11 +70,22 @@ And for the the slide sensor, sliding in one direction increases the voltage lin
 
 **a. Does it matter what actions are assigned to which state? Why?**
 
+Yes:
+State 0 clears memory
+State 1 reads the memory
+State 2 writes the memory.
+
 **b. Why is the code here all in the setup() functions and not in the loop() functions?**
+
+Each character in the string is a byte. That is, it takes 8-bits to encode a character, so the number of characters in the string we are writing is the number of bytes we are occupying in EEPROM. The Atmega 328P at the heart of the Arduino has 1024 bytes of internal EEPROM Memory (which is separate from the 32KB of Program memory it has for the code it is running.)
 
 **c. How many byte-sized data samples can you store on the Atmega328?**
 
+1024
+
 **d. How would you get analog data from the Arduino analog pins to be byte-sized? How about analog data from the I2C devices?**
+
+Divide by four.
 
 **e. Alternately, how would we store the data if it were bigger than a byte? (hint: take a look at the [EEPROMPut](https://www.arduino.cc/en/Reference/EEPROMPut) example)**
 
